@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(title,style: TextStyle(fontSize: UIConfig.fontSizeMain),),
-                Icon(Icons.chevron_right,size: UIConfig.iconSizeMain,)
+                Icon(Icons.chevron_right,size: UIConfig.iconSizeBig,)
               ],
             ),
           ),

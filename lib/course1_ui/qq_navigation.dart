@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/course1_ui/pages/qq_chat.dart';
 import 'package:flutter_learning/course1_ui/qq_appbar.dart';
 
 class QQNavigation extends StatefulWidget {
@@ -32,7 +33,7 @@ class _QQNavigationState extends State<QQNavigation> {
               child: PageView(
                 controller: navigationController,
                 children: [
-                  Container(color: Colors.red,),
+                  QQChat(),
                   Container(color: Colors.blue,),
                   Container(),
                 ],

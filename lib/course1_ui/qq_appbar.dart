@@ -39,6 +39,7 @@ class QQAppBar extends StatelessWidget {
     );
   }
 
+  // 圆角头像
   Container _buildAvatar() {
     return Container(
         width: 40,
@@ -55,6 +56,7 @@ class QQAppBar extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // 用户名
         Text(
           "阿腾木",
           style: TextStyle(
@@ -62,8 +64,10 @@ class QQAppBar extends StatelessWidget {
               fontSize: UIConfig.fontSizeBig,
               fontWeight: FontWeight.bold),
         ),
+        // 在线状态
         Row(
           children: [
+            // 小绿点
             Container(
               height: UIConfig.fontSizeMini,
               width: UIConfig.fontSizeMini,
