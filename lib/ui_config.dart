@@ -5,7 +5,9 @@ class UIConfig{
   static double marginTB = 16;
 
   // 文字大小
-  static double fontSizeMain = 16;
+  static double fontSizeBig = 16;
+  static double fontSizeMain = 14;
+  static double fontSizeMini = 12;
 
   // 图标大小
   static double iconSizeMain = 16;

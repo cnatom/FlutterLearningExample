@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learning/course1_ui.dart';
+import 'package:flutter_learning/course1_ui/qq_navigation.dart';
 import 'package:flutter_learning/ui_config.dart';
 
 main() => runApp(const MyApp());
 
+/// App的入口
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -12,17 +13,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // 隐藏debug横幅
       routes: {
-        Course1UI.id:(context)=>const Course1UI()
+        QQNavigation.id:(context)=>QQNavigation()
       },
       home: const HomePage(),
     );
   }
 }
 
+/// 主页
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
-  final EdgeInsetsGeometry padding = const EdgeInsets.symmetric(horizontal: 16,vertical: 16);
+  final EdgeInsetsGeometry padding = const EdgeInsets.symmetric(horizontal: 16,vertical: 16); // 内边距
 
 
   @override
@@ -33,11 +35,12 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          _buildRowButton(context,Course1UI.id,Course1UI.title)
+          _buildRowButton(context,QQNavigation.id,QQNavigation.title)
         ],
       ),
     );
   }
+
 
   InkWell _buildRowButton(BuildContext context,String id,String title) {
     return InkWell(
