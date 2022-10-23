@@ -15,13 +15,27 @@ class QQNavigation extends StatefulWidget {
 class _QQNavigationState extends State<QQNavigation> {
   int currentPageIndex = 0;
 
-  var navigationController = PageController();
+  late PageController navigationController;
 
   List<Map<String,IconData>> bottomData = [
     {"消息":Icons.chat_bubble},
     {"联系人":Icons.person},
     {"动态":Icons.star},
   ];
+
+
+  @override
+  void initState() {
+    super.initState();
+    navigationController = PageController();
+  }
+
+
+  @override
+  void dispose() {
+    super.dispose();
+    navigationController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {

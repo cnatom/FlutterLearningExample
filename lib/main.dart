@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 进行整个App的配置
     return MaterialApp(
       debugShowCheckedModeBanner: false, // 隐藏debug横幅
       routes: {

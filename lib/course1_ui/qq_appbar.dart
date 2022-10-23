@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../ui_config.dart';
 
+
 class QQAppBar extends StatelessWidget {
   const QQAppBar({
     Key? key, this.qqNumber = "1004275481",
